@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Measurement Prediction</title>
+    <style>
+        /* CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Upload an Image or Take a Picture for Body Measurement Prediction</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <img id="imagePreview" src="" alt="Image Preview">
+        <button type="submit">Upload</button>
+    </form>
+    <button id="takePictureBtn">Take a Picture</button>
+    <div id="cameraContainer" style="display:none;">
+        <div id="videoContainer">
+            <video id="videoElement" autoplay></video>
+            <img id="overlay" src="body_outline.png" alt="Overlay">
+        </div>
+        <div id="timer"></div>
+        <button id="captureBtn">Capture</button>
+        <img id="capturePreview" src="" alt="Capture Preview">
+    </div>
+    <div id="predictions"></div>
+    <script src="index.js"></script>
+</body>
+</html>

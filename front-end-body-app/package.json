@@ -1,0 +1,15 @@
+{
+    "name": "body-measurement-frontend",
+    "version": "1.0.0",
+    "description": "Frontend for Body Measurement Prediction",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "serve -s public"
+    },
+    "dependencies": {
+      "serve": "^11.3.2"
+    },
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  
